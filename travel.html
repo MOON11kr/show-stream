@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages</title>
+    <style>
+        :root {
+            --primary-bg: #1c1c1c;
+            --secondary-bg: #262626;
+            --text-color: #ffffff;
+            --accent-color: #e53935;
+            --hover-color: #d32f2f;
+            --section-header-bg: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+        }
+
+        header {
+            padding: 15px;
+            background-color: var(--secondary-bg);
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: var(--accent-color);
+        }
+
+        .section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: var(--section-header-bg);
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            font-size: 26px;
+            padding: 10px 0;
+            text-align: center;
+            background-color: var(--secondary-bg);
+            margin: 0;
+            border-radius: 5px;
+            color: var(--accent-color);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .packages-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .package {
+            background-color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .package img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .package-content {
+            padding: 15px;
+        }
+
+        .package h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: var(--accent-color);
+        }
+
+        .package p {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #aaa;
+        }
+
+        .package .actions {
+            margin-top: 10px;
+        }
+
+        .package button {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .package button:hover {
+            background-color: var(--hover-color);
+        }
+
+        .package .discount-code {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+ <header>
+        <div class="logo">Show Stream</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="overseas.html">Overseas</a></li>
+                <li><a href="coupons.html">Coupons</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="collabs.html">Collabs</a></li>
+                <li><a href="cult.html">Cult</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <h1>Explore Travel Packages</h1>
+    </header>
+
+    <!-- India Packages -->
+    <div class="section">
+        <h2>India Packages</h2>
+        <div class="packages-container">
+            <div class="package">
+                <img src="https://source.unsplash.com/280x180/?kerala,backwaters" alt="Kerala Backwaters">
+                <div class="package-content">
+                    <h3>Kerala Backwaters</h3>
+                    <p>Location: Kerala, India</p>
+                    <p>10% off with code: <span class="discount-code">INDIA10</span></p>
+                    <div class="actions">
+                        <button>Book Now</button>
+                        <button onclick="copyCode('INDIA10')">Copy Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package">
+                <img src="https://source.unsplash.com/280x180/?goa,beach" alt="Goa Beaches">
+                <div class="package-content">
+                    <h3>Goa Beaches</h3>
+                    <p>Location: Goa, India</p>
+                    <p>10% off with code: <span class="discount-code">INDIA10</span></p>
+                    <div class="actions">
+                        <button>Book Now</button>
+                        <button onclick="copyCode('INDIA10')">Copy Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package">
+                <img src="https://source.unsplash.com/280x180/?dehradun,hills" alt="Dehradun Hills">
+                <div class="package-content">
+                    <h3>Dehradun Hills</h3>
+                    <p>Location: Dehradun, India</p>
+                    <p>10% off with code: <span class="discount-code">INDIA10</span></p>
+                    <div class="actions">
+                        <button>Book Now</button>
+                        <button onclick="copyCode('INDIA10')">Copy Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package">
+                <img src="https://source.unsplash.com/280x180/?jaipur,palace" alt="Jaipur Palaces">
+                <div class="package-content">
+                    <h3>Jaipur Palaces</h3>
+                    <p>Location: Jaipur, India</p>
+                    <p>10% off with code: <span class="discount-code">INDIA10</span></p>
+                    <div class="actions">
+                        <button>Book Now</button>
+                        <button onclick="copyCode('INDIA10')">Copy Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package">
+                <img src="https://source.unsplash.com/280x180/?udaipur,lake" alt="Udaipur Lakes">
+                <div class="package-content">
+                    <h3>Udaipur Lakes</h3>
+                    <p>Location: Udaipur, India</p>
+                    <p>10% off with code: <span class="discount-code">INDIA10</span></p>
+                    <div class="actions">
+                        <button>Book Now</button>
+                        <button onclick="copyCode('INDIA10')">Copy Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- International Packages -->
+    <div class="section">
+        <h2>International Packages</h2>
+        <div class="packages-container">
+            <div class="package">
+                <img src="https://source.unsplash.com/280x180/?paris,eiffel-tower" alt="Paris Getaway">
+                <div class="package-content">
+                    <h3>Paris Getaway</h3>
+                    <p>Location: Paris, France</p>
+                    <p>10% off with code: <span class="discount-code">INTL10</span></p>
+                    <div class="actions">
+                        <button>Book Now</button>
+                        <button onclick="copyCode('INTL10')">Copy Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package">
+                <img src="https://source.unsplash.com/280x180/?maldives,island" alt="Maldives Escape">
+                <div class="package-content">
+                    <h3>Maldives Escape</h3>
+                    <p>Location: Maldives</p>
+                    <p>10% off with code: <span class="discount-code">INTL10</span></p>
+                    <div class="actions">
+                        <button>Book Now</button>
+                        <button onclick="copyCode('INTL10')">Copy Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package">                <img src="https://source.unsplash.com/280x180/?new-york,cityscape" alt="New York City Tour">
+                <div class="package-content">
+                    <h3>New York City Tour</h3>
+                    <p>Location: New York, USA</p>
+                    <p>10% off with code: <span class="discount-code">INTL10</span></p>
+                    <div class="actions">
+                        <button>Book Now</button>
+                        <button onclick="copyCode('INTL10')">Copy Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package">
+                <img src="https://source.unsplash.com/280x180/?tokyo,japan" alt="Tokyo Adventure">
+                <div class="package-content">
+                    <h3>Tokyo Adventure</h3>
+                    <p>Location: Tokyo, Japan</p>
+                    <p>10% off with code: <span class="discount-code">INTL10</span></p>
+                    <div class="actions">
+                        <button>Book Now</button>
+                        <button onclick="copyCode('INTL10')">Copy Code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package">
+                <img src="https://source.unsplash.com/280x180/?rome,history" alt="Rome Cultural Tour">
+                <div class="package-content">
+                    <h3>Rome Cultural Tour</h3>
+                    <p>Location: Rome, Italy</p>
+                    <p>10% off with code: <span class="discount-code">INTL10</span></p>
+                    <div class="actions">
+                        <button>Book Now</button>
+                        <button onclick="copyCode('INTL10')">Copy Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyCode(code) {
+            navigator.clipboard.writeText(code).then(() => {
+                alert(`Discount code "${code}" copied to clipboard!`);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
+

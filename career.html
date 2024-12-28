@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Stream - Cult</title>
+    <style>
+        :root {
+            --primary-bg: #141414;
+            --secondary-bg: #1f1f1f;
+            --accent-color: #e50914;
+            --text-color: #ffffff;
+            --hover-color: #333333;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: var(--secondary-bg);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--accent-color);
+            text-transform: uppercase;
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background-color: var(--hover-color);
+            border-radius: 5px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .job-posting {
+            background-color: var(--hover-color);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .job-posting h3 {
+            margin: 0;
+            font-size: 20px;
+            color: var(--text-color);
+        }
+
+        .job-posting p {
+            margin: 5px 0 10px;
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        .job-posting .location {
+            font-size: 13px;
+            color: #999999;
+        }
+
+        .job-posting .buttons {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .job-posting .buttons a {
+            text-decoration: none;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .job-posting .buttons a:hover {
+            background-color: #ff5733;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            header nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Show Stream</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="overseas.html">Overseas</a></li>
+                <li><a href="coupons.html">Coupons</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="collabs.html">Collabs</a></li>
+                <li><a href="cult.html">Cult</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <!-- Internships & Jobs Section -->
+        <div class="section">
+            <h2>Internships & Jobs</h2>
+            <div class="grid-container">
+                <div class="job-posting">
+                    <h3>Software Developer Internship</h3>
+                    <p>Work with cutting-edge technologies to develop applications.</p>
+                    <p class="location">Location: Remote</p>
+                    <div class="buttons">
+                        <a href="#">Visit Company Website</a>
+                        <a href="mailto:company1@example.com">Apply Now</a>
+                    </div>
+                </div>
+                <div class="job-posting">
+                    <h3>Marketing Executive</h3>
+                    <p>Join our dynamic team to lead creative marketing campaigns.</p>
+                    <p class="location">Location: New York, USA</p>
+                    <div class="buttons">
+                        <a href="#">Visit Company Website</a>
+                        <a href="mailto:company2@example.com">Apply Now</a>
+                    </div>
+                </div>
+                <div class="job-posting">
+                    <h3>Graphic Designer</h3>
+                    <p>Design stunning visuals for our marketing and branding projects.</p>
+                    <p class="location">Location: Remote</p>
+                    <div class="buttons">
+                        <a href="#">Visit Company Website</a>
+                        <a href="mailto:company3@example.com">Apply Now</a>
+                    </div>
+                </div>
+                <!-- Add more job postings as needed -->
+            </div>
+        </div>
+
+        <!-- Government Jobs Section -->
+        <div class="section">
+            <h2>Government Jobs</h2>
+            <div class="grid-container">
+                <div class="job-posting">
+                    <h3>Public Sector Clerk</h3>
+                    <p>Join the state government office for administrative tasks.</p>
+                    <p class="location">Location: Los Angeles, USA</p>
+                    <div class="buttons">
+                        <a href="mailto:govjob@example.com">Apply Now</a>
+                    </div>
+                </div>
+                <div class="job-posting">
+                    <h3>Government Data Analyst</h3>
+                    <p>Analyze data for public sector improvements and policies.</p>
+                    <p class="location">Location: Washington, D.C., USA</p>
+                    <div class="buttons">
+                        <a href="mailto:govdata@example.com">Apply Now</a>
+                    </div>
+                </div>
+                <div class="job-posting">
+                    <h3>Health Inspector</h3>
+                    <p>Ensure compliance with health regulations across facilities.</p>
+                    <p class="location">Location: Chicago, USA</p>
+                    <div class="buttons">
+                        <a href="mailto:healthgov@example.com">Apply Now</a>
+                    </div>
+                </div>
+                <!-- Add more government job postings as needed -->
+            </div>
+        </div>
+
+        <!-- Scholarships Section -->
+        <div class="section">
+            <h2>Scholarships</h2>
+            <div class="grid-container">
+                <div class="job-posting">
+                    <h3>Global Talent Scholarship</h3>
+                    <p>Avail opportunities for higher education abroad.</p>
+                    <p class="location">Eligibility: Students worldwide</p>
+                    <div class="buttons">
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="job-posting">
+                    <h3>National Science Fund</h3>
+                    <p>Support for research and innovation in science fields.</p>
+                    <p class="location">Eligibility: US Citizens</p>
+                    <div class="buttons">
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="job-posting">
+                    <h3>Arts and Humanities Grant</h3>
+                    <p>Funding opportunities for students in arts and humanities.</p>
+                    <p class="location">Eligibility: Open to all</p>
+                    <div class="buttons">
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="job-posting">
+                    <h3>Engineering Excellence Scholarship</h3>
+                    <p>Support for engineering students excelling in academics.</p>
+                    <p class="location">Eligibility: Engineering Students</p>
+                    <div class="buttons">
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="job-posting">
+                    <h3>Women in STEM Scholarship</h3>
+                    <p>Encouraging women to pursue careers in STEM fields.</p>
+                    <p class="location">Eligibility: Women in STEM programs</p>
+                    <div class="buttons">
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="job-posting">
+                    <h3>Community Leadership Award</h3>
+                    <p>Grants for students actively leading community initiatives.</p>
+                    <p class="location">Eligibility: Community Leaders</p>
+                    <div class="buttons">
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+
+                </div>
+                <!-- Add more scholarship postings as needed -->
+            </div>
+        </div>
+
+

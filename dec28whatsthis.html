@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Stream - Cult</title>
+    <style>
+        :root {
+            --primary-bg: #141414;
+            --secondary-bg: #1f1f1f;
+            --accent-color: #e50914;
+            --text-color: #ffffff;
+            --hover-color: #333333;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: var(--secondary-bg);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--accent-color);
+            text-transform: uppercase;
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background-color: var(--hover-color);
+            border-radius: 5px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .video-player {
+            width: 100%;
+            max-width: 900px;
+            background: var(--secondary-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .video-player video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .video-title {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: center;
+            color: var(--accent-color);
+            padding: 0 10px;
+        }
+
+        .suggested-videos {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 900px;
+            background: var(--secondary-bg);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .suggested-videos h3 {
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        .thumbnail-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .thumbnail {
+            display: flex;
+            gap: 10px;
+            background-color: var(--hover-color);
+            border-radius: 8px;
+            padding: 10px;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            transition: background-color 0.3s;
+        }
+
+        .thumbnail:hover {
+            background-color: var(--accent-color);
+        }
+
+        .thumbnail img {
+            width: 100px;
+            height: 60px;
+            border-radius: 5px;
+        }
+
+        .thumbnail .details {
+            flex-grow: 1;
+        }
+
+        .thumbnail .details h4 {
+            margin: 0;
+            font-size: 16px;
+            color: var(--text-color);
+        }
+
+        .thumbnail .details p {
+            margin: 5px 0 0;
+            font-size: 12px;
+            color: #cccccc;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            header nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .video-title {
+                font-size: 18px;
+            }
+
+            .thumbnail {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .thumbnail img {
+                width: 80px;
+                height: 50px;
+            }
+
+            .thumbnail .details h4 {
+                font-size: 14px;
+            }
+
+            .thumbnail .details p {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Show Stream</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="overseas.html">Overseas</a></li>
+                <li><a href="coupons.html">Coupons</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="collabs.html">Collabs</a></li>
+                <li><a href="cult.html">Cult</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <!-- Video Player Section -->
+        <div class="video-player">
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Video Title -->
+        <div class="video-title">Exploring Creative Minds</div>
+
+        <!-- Suggested Videos Section -->
+        <div class="suggested-videos">
+            <h3>Up Next</h3>
+            <div class="thumbnail-container">
+                <div class="thumbnail">
+                    <img src="https://via.placeholder.com/120x80" alt="Next Video Thumbnail">
+                    <div class="details">
+                        <h4>Tech Talks</h4>
+                        <p>Latest tech discussions and insights.</p>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="https://via.placeholder.com/120x80" alt="Next Video Thumbnail">
+                    <div class="details">
+                        <h4>Business Insights</h4>
+                        <p>Learn from industry leaders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

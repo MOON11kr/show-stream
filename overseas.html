@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overseas Opportunities</title>
+    <style>
+        :root {
+            --primary-bg: #141414;
+            --secondary-bg: #1f1f1f;
+            --accent-color: #e50914;
+            --text-color: #ffffff;
+            --hover-color: #333333;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: var(--secondary-bg);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--accent-color);
+            text-transform: uppercase;
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background-color: var(--hover-color);
+            border-radius: 5px;
+        }
+
+        .main-content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .left-section {
+            flex: 2; /* Half the page */
+        }
+
+        .right-section {
+            flex: 1; /* Split the other half into 1/4 each */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .country-section {
+            margin-bottom: 20px;
+            background-color: var(--secondary-bg);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .country-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+
+        .video-section, .testimonials {
+            background-color: var(--secondary-bg);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-section h3, .testimonials h3 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .testimonials video, .video-section video {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+.learn-more {
+    color: var(--accent-color); /* Use your red accent color */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Optional, to make it stand out */
+}
+
+.learn-more:hover {
+    color: #ff6666; /* Optional: Slightly lighter red on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+
+            .left-section, .right-section {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Overseas Study</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="overseas.html">Overseas</a></li>
+                <li><a href="coupons.html">Coupons</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="collabs.html">Collabs</a></li>
+                <li><a href="cult.html">Cult</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="country-section">
+                <h2>Study in the UK</h2>
+                <p>Explore opportunities to study in the UK, including top universities and vibrant cities like London, Manchester, and Edinburgh.</p>
+<a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="country-section">
+                <h2>Study in Germany</h2>
+                <p>Learn about study<a href="#" class="learn-more">Learn More</a>
+<a href="#" class="learn-more">Learn More</a>
+
+            </div>
+            <div class="country-section">
+                <h2>Study in Canada</h2>
+                <p>Discover Canada's welcoming environment, top-ranked universities, and cities like Toronto, Vancouver, and Montreal.</p>
+  <a href="#" class="learn-more">Learn More</a>
+
+            </div>
+            <div class="country-section">
+                <h2>Study in Australia</h2>
+                <p>Find out more about studying in Australia, known for its excellent education system and cities like Sydney, Melbourne, and Brisbane.</p>
+ <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <!-- Testimonials Section -->
+            <div class="testimonials">
+                <h3>Student Testimonials</h3>
+                <video controls>
+                    <source src="testimonials/uk-student.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="testimonials/germany-student.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="testimonials/canada-student.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="testimonials/australia-student.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="testimonials/usa-student.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- All You Need to Know Section -->
+            <div class="video-section">
+                <h3>All You Need to Know</h3>
+                <video controls>
+                    <source src="videos/all-you-need-to-know.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
